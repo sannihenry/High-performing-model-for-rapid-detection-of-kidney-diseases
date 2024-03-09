@@ -11,6 +11,9 @@ Created on Wed Feb 24 04:30:05 2024
 
 @author: Sanni Henry
 """
+
+
+
 import streamlit as st
 from PIL import Image
 image = Image.open('kidney_image.jpeg')
@@ -40,7 +43,10 @@ def predict_note_authentication(age, blood_pressure, specific_gravity, albumin, 
               potassium, haemoglobin, packed_cell_volume, white_blood_cell_count, red_blood_cell_count,
               hypertension, diabetes_mellitus, coronary_artery_disease, appetite, peda_edema,
               aanemia):
-    
+
+    """Let's Authenticate the Banks Note 
+    This is using docstrings for specifications.
+    ---
     parameters:  
       - name: age
         in: query
@@ -190,4 +196,4 @@ if __name__=='__main__':
     main()
     
     
-    """
+    
